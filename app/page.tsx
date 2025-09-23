@@ -463,9 +463,9 @@ export default function HomePage() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/professional-team-celebrating-success-with-balloon.jpg"
+            src="/20180211_133826.jpg"
             alt="Team Building Results In Action"
-            className="w-full h-full object-cover"
+            className="w-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -484,141 +484,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-10 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-              Why Choose Log Vikas?
-            </h2>
-            <p className="text-xl text-orange-500 max-w-3xl mx-auto leading-relaxed font-medium">
-              Learn why Log Vikas is the best option for your team-building and
-              training needs.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-16 items-start max-w-6xl mx-auto">
-            {/* Left Column */}
-            <div className="space-y-8">
-              {/* Feature 1 */}
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Trophy className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Expertise & Experience
-                  </h3>
-                  <p className="text-gray-600">
-                    With years in the renewable energy field, we have built a
-                    skilled team in solar energy solutions. We stay updated with
-                    the latest technologies to offer the most efficient and
-                    cost-effective systems available. We have a deep
-                    understanding of government regulations, tender procedures,
-                    and compliance standards. LogVikas has successfully
-                    delivered solar energy solutions for several government
-                    projects, building a reputation for dependability and
-                    quality work.
-                  </p>
-                </div>
-              </div>
-              {/* Feature 2 */}
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Star className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Customized Solutions
-                  </h3>
-                  <p className="text-gray-600">
-                    We believe that each customer’s energy needs are different.
-                    Our solutions are tailored to meet your specific
-                    requirements, ensuring you get the most benefits from your
-                    solar energy system.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Star className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Commitment to Sustainability
-                  </h3>
-                  <p className="text-gray-600">
-                    At LogVikas, we care deeply about sustainability. We help
-                    our clients reduce fossil fuel dependency, lower their
-                    carbon footprints, and contribute to a cleaner planet.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Right Column */}
-            <div className="space-y-8">
-              {/* Feature 3 */}
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Lightbulb className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    End-to-End Service
-                  </h3>
-                  <p className="text-gray-600">
-                    From initial consulting and system installation to
-                    post-installation maintenance, we offer complete solutions;
-                    we offer a complete range of services. We make your
-                    transition to solar energy smooth and easy thus meeting
-                    deadlines, budgets, and government standards.
-                  </p>
-                </div>
-              </div>
-              {/* Feature 4 */}
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Globe className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Scalability & Flexibility
-                  </h3>
-                  <p className="text-gray-600">
-                    We recognize the each project’s feasibility and provide
-                    personalised solutions. Be it be government projects which
-                    involves large and complex installations or residential and
-                    basic commercial projects. Our solutions are scalable and
-                    adaptable, ensuring we can cater to the specific needs of
-                    any project, regardless of size.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Globe className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Transparent & Affordable Pricing
-                  </h3>
-                  <p className="text-gray-600">
-                    We offer competitive pricing and clear cost structures,
-                    ensuring no hidden fees. We also work with financial
-                    partners to provide affordable financing options, making
-                    solar energy more accessible. Our solar solutions help
-                    governments reduce energy costs while meeting sustainability
-                    goals. We also assist with accessing government subsidies
-                    and financial incentives that make solar energy more
-                    affordable.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <section className="py-24 bg-gradient-to-r from-blue-600 to-cyan-500">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

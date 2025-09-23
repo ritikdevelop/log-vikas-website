@@ -68,10 +68,7 @@ export default function ContactPage() {
                         </h3>
                         <div className="space-y-1">
                           <p className="text-muted-foreground">
-                            General Query: 91-8595847024
-                          </p>
-                          <p className="text-muted-foreground">
-                            Training: 9560090847
+                            +91-9560090847 | 73037 61417
                           </p>
                         </div>
                       </div>
@@ -92,10 +89,7 @@ export default function ContactPage() {
                         </h3>
                         <div className="space-y-1">
                           <p className="text-muted-foreground">
-                            logvikas.india@gmail.com
-                          </p>
-                          <p className="text-muted-foreground">
-                            logvikas.sdbu@gmail.com
+                            contact@logvikas.in | logvikas.india@gmail.com
                           </p>
                         </div>
                       </div>
@@ -115,28 +109,9 @@ export default function ContactPage() {
                           Office Address
                         </h3>
                         <p className="text-muted-foreground">
-                          Unit Number 20, Vasundhara Market
+                          Vaishali Sector-3 Ghaziabad 
                           <br />
-                          Sector-17, Ghaziabad, India
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* YouTube Channel */}
-                <Card>
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-primary/10 p-3 rounded-full">
-                        <Youtube className="h-6 w-6 text-primary" />
-                      </div>
-                      <div className="space-y-2">
-                        <h3 className="font-semibold text-foreground">
-                          YouTube Channel
-                        </h3>
-                        <p className="text-muted-foreground">
-                          Bplus NEWS & Reports
+                          Uttar-Pradesh-201010
                         </p>
                       </div>
                     </div>

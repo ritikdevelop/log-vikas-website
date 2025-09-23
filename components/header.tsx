@@ -13,24 +13,18 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
+          <Link href="/" className="flex items-center space-x-2 group min-w-[48px]">
             <div className="relative">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/images%281%29-cPK4BN1Gw1qhEAFA1UCW0vJBKh1pH7.jpeg"
                 alt="Log Vikas Logo"
-                className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
+                className="h-10 w-auto max-w-[120px] transition-transform duration-300 group-hover:scale-105"
               />
             </div>
-            {/* <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-primary">Log Vikas</h1>
-              <p className="text-xs text-muted-foreground">
-                Developing People for Better Tomorrow
-              </p>
-            </div> */}
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4 xl:space-x-8">
             <Link
               href="/"
               className="text-foreground hover:text-primary transition-all duration-300 font-medium relative group"
@@ -76,10 +70,11 @@ export function Header() {
             </Link>
           </nav>
 
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Desktop Buttons */}
+          <div className="hidden md:flex items-center space-x-2 xl:space-x-4">
             <Button
               asChild
-              className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 animate-refined-glow"
+              className="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 xl:px-6 py-2 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 animate-refined-glow"
             >
               <Link
                 href="/green-energy"
@@ -100,12 +95,23 @@ export function Header() {
                 <span>Admin Login</span>
               </Link>
             </Button>
+
+            <Button
+              asChild
+              variant="secondary"
+              className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 xl:px-6 py-2 rounded-full transition-all duration-300"
+            >
+              <Link href="/download" download>
+                <span>Download</span>
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-lg hover:bg-muted/50 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? (
               <X className="h-6 w-6" />
@@ -117,30 +123,34 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-6 border-t border-border/40 elegant-card rounded-b-lg">
-            <nav className="flex flex-col space-y-4">
-              <Link
-                href="/"
-                className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2 rounded-lg hover:bg-muted/50"
+          <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex flex-col">
+            <div className="flex justify-between items-center h-20 px-4 border-b border-border/40">
+              <Link href="/" className="flex items-center space-x-2 group min-w-[48px]" onClick={() => setIsMenuOpen(false)}>
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/images%281%29-cPK4BN1Gw1qhEAFA1UCW0vJBKh1pH7.jpeg"
+                  alt="Log Vikas Logo"
+                  className="h-10 w-auto max-w-[120px]"
+                />
+              </Link>
+              <button
+                className="p-2 rounded-lg hover:bg-muted/50 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+                aria-label="Close menu"
               >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+            <nav className="flex flex-col space-y-2 py-6 px-4">
+              <Link href="/" className="text-foreground hover:text-primary font-medium px-4 py-2 rounded-lg hover:bg-muted/50" onClick={() => setIsMenuOpen(false)}>
                 Home
               </Link>
-              <Link
-                href="/about"
-                className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2 rounded-lg hover:bg-muted/50"
-              >
+              <Link href="/about" className="text-foreground hover:text-primary font-medium px-4 py-2 rounded-lg hover:bg-muted/50" onClick={() => setIsMenuOpen(false)}>
                 About
               </Link>
-              <Link
-                href="/services"
-                className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2 rounded-lg hover:bg-muted/50"
-              >
+              <Link href="/services" className="text-foreground hover:text-primary font-medium px-4 py-2 rounded-lg hover:bg-muted/50" onClick={() => setIsMenuOpen(false)}>
                 Services
               </Link>
-              <Link
-                href="/lms"
-                className="text-foreground hover:text-primary transition-colors font-medium flex items-center space-x-2 px-4 py-2 rounded-lg hover:bg-muted/50 group"
-              >
+              <Link href="/lms" className="text-foreground hover:text-primary font-medium flex items-center space-x-2 px-4 py-2 rounded-lg hover:bg-muted/50 group" onClick={() => setIsMenuOpen(false)}>
                 <GraduationCap className="h-4 w-4" />
                 <div className="relative flex items-center justify-center min-w-[90px]">
                   <span className="group-hover:opacity-0 transition-opacity duration-300">
@@ -151,34 +161,42 @@ export function Header() {
                   </span>
                 </div>
               </Link>
-              <Link
-                href="/contact"
-                className="text-foreground hover:text-primary transition-colors font-medium px-4 py-2 rounded-lg hover:bg-muted/50"
-              >
+              <Link href="/contact" className="text-foreground hover:text-primary font-medium px-4 py-2 rounded-lg hover:bg-muted/50" onClick={() => setIsMenuOpen(false)}>
                 Contact
               </Link>
-
-              <Button
-                asChild
-                className="bg-green-500 hover:bg-green-600 text-white font-semibold mx-4 rounded-full"
-              >
-                <Link
-                  href="/green-energy"
-                  className="flex items-center justify-center space-x-2"
+              <div className="flex flex-col space-y-2 mt-4">
+                <Button
+                  asChild
+                  className="bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full"
                 >
-                  <Leaf className="h-4 w-4" />
-                  <span>Green Switch</span>
-                </Link>
-              </Button>
-
-              <div className="pt-4 border-t border-border/40 mx-4">
-                <Link
-                  href="/auth/admin-login"
-                  className="text-foreground hover:text-primary transition-colors flex items-center space-x-2 py-2 px-4 rounded-lg hover:bg-muted/50"
+                  <Link
+                    href="/green-energy"
+                    className="flex items-center justify-center space-x-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Leaf className="h-4 w-4" />
+                    <span>Green Switch</span>
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="secondary"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full"
                 >
-                  <Shield className="h-4 w-4" />
-                  <span>Admin Login</span>
-                </Link>
+                  <a href="/download" download>
+                    <span>Download</span>
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="flex items-center space-x-2 bg-transparent border-2 border-border hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-elegant"
+                >
+                  <Link href="/auth/admin-login" onClick={() => setIsMenuOpen(false)}>
+                    <Shield className="h-4 w-4" />
+                    <span>Admin Login</span>
+                  </Link>
+                </Button>
               </div>
             </nav>
           </div>

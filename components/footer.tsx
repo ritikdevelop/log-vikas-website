@@ -1,12 +1,13 @@
-import Link from "next/link"
-import { Phone, Mail, MapPin, Youtube, Leaf } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Phone, Mail, MapPin, Leaf } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Footer() {
   return (
     <footer className="bg-muted/50 border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
           {/* Company Info */}
           <div className="space-y-4">
             <img
@@ -15,7 +16,8 @@ export function Footer() {
               className="h-12 w-auto"
             />
             <p className="text-muted-foreground text-sm">
-              Developing People for Better Tomorrow. Professional training company with 2000+ man days of experience.
+              Developing People for Better Tomorrow. Professional training
+              company with 2000+ man days of experience.
             </p>
           </div>
 
@@ -23,27 +25,42 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
-              <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <Link
+                href="/about"
+                className="text-muted-foreground hover:text-primary transition-colors text-sm"
+              >
                 About Us
               </Link>
-              <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <Link
+                href="/services"
+                className="text-muted-foreground hover:text-primary transition-colors text-sm"
+              >
                 Our Services
               </Link>
-              <Link href="/lms" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <Link
+                href="/lms"
+                className="text-muted-foreground hover:text-primary transition-colors text-sm"
+              >
                 Learning Management
               </Link>
-              <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <Link
+                href="/contact"
+                className="text-muted-foreground hover:text-primary transition-colors text-sm"
+              >
                 Contact Us
               </Link>
               <Button
-              asChild
-              className="bg-green-500 hover:bg-green-600 text-white font-semibold px-3 py-2 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 animate-refined-glow"
-            >
-              <Link href="/green-energy" className="flex items-center space-x-2">
-                <Leaf className="h-4 w-4" />
-                <span>Green Switch</span>
-              </Link>
-            </Button>
+                asChild
+                className="bg-green-500 hover:bg-green-600 text-white font-semibold px-3 py-2 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 animate-refined-glow"
+              >
+                <Link
+                  href="/green-energy"
+                  className="flex items-center space-x-2"
+                >
+                  <Leaf className="h-4 w-4" />
+                  <span>Green Switch</span>
+                </Link>
+              </Button>
             </nav>
           </div>
 
@@ -51,10 +68,18 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Services</h3>
             <nav className="flex flex-col space-y-2">
-              <span className="text-muted-foreground text-sm">Corporate Training</span>
-              <span className="text-muted-foreground text-sm">Skill Development</span>
-              <span className="text-muted-foreground text-sm">Event Management</span>
-              <span className="text-muted-foreground text-sm">Placement Services</span>
+              <span className="text-muted-foreground text-sm">
+                Corporate Training
+              </span>
+              <span className="text-muted-foreground text-sm">
+                Skill Development
+              </span>
+              <span className="text-muted-foreground text-sm">
+                Event Management
+              </span>
+              <span className="text-muted-foreground text-sm">
+                Placement Services
+              </span>
             </nav>
           </div>
 
@@ -64,25 +89,29 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground text-sm">91-8595847024</span>
+                <span className="text-muted-foreground text-sm">
+                  91-9560090847
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground text-sm">9560090847</span>
+                <span className="text-muted-foreground text-sm">
+                  91-7303761417
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground text-sm">logvikas.india@gmail.com</span>
+                <span className="text-muted-foreground text-sm">
+                  contact@logvikas.in | logvikas.india@gmail.com
+                </span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
                 <span className="text-muted-foreground text-sm">
-                  Unit 20, Vasundhara Market, Sector-17 Ghaziabad, India
+                  Vaishali Sector-3 Ghaziabad
+                  <br />
+                  Uttar-Pradesh-201010
                 </span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Youtube className="h-4 w-4 text-primary" />
-                <span className="text-muted-foreground text-sm">Bplus NEWS & Reports</span>
               </div>
             </div>
           </div>
@@ -90,10 +119,11 @@ export function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Log Vikas. All rights reserved. | Developing People for Better Tomorrow
+            © 2025 Log Vikas. All rights reserved. | Developing People for
+            Better Tomorrow
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
