@@ -123,8 +123,8 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex flex-col">
-            <div className="flex justify-between items-center h-20 px-4 border-b border-border/40">
+          <div className="fixed inset-0 z-50 bg-white flex flex-col">
+            <div className="flex justify-between bg-white items-center h-20 px-4 border-b border-border/40">
               <Link href="/" className="flex items-center space-x-2 group min-w-[48px]" onClick={() => setIsMenuOpen(false)}>
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/images%281%29-cPK4BN1Gw1qhEAFA1UCW0vJBKh1pH7.jpeg"
@@ -140,7 +140,7 @@ export function Header() {
                 <X className="h-6 w-6" />
               </button>
             </div>
-            <nav className="flex flex-col space-y-2 py-6 px-4">
+            <nav className="flex flex-col bg-white space-y-2 py-6 px-4">
               <Link href="/" className="text-foreground hover:text-primary font-medium px-4 py-2 rounded-lg hover:bg-muted/50" onClick={() => setIsMenuOpen(false)}>
                 Home
               </Link>
@@ -154,11 +154,9 @@ export function Header() {
                 <GraduationCap className="h-4 w-4" />
                 <div className="relative flex items-center justify-center min-w-[90px]">
                   <span className="group-hover:opacity-0 transition-opacity duration-300">
-                    LOT
-                  </span>
-                  <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-sm">
                     Learn On Tap
                   </span>
+
                 </div>
               </Link>
               <Link href="/contact" className="text-foreground hover:text-primary font-medium px-4 py-2 rounded-lg hover:bg-muted/50" onClick={() => setIsMenuOpen(false)}>

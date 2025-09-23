@@ -29,7 +29,7 @@ export default function HomePage() {
           <img
             src="/20180211_133826.jpg"
             alt="Team Building Results In Action"
-            className="w-full  sm:h-[1000px] lg:h-[600px] object-cover object-center"
+            className="w-full sm:h-[1000px] lg:h-[600px] object-cover object-center"
             // Responsive image
           />
         </div>
@@ -86,86 +86,86 @@ export default function HomePage() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
-            <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
+            <h2 className="text-lg sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
               Corporate Training Programs
             </h2>
-            <p className="text-sm sm:text-base lg:text-xl text-orange-500 max-w-3xl mx-auto leading-relaxed font-medium break-words">
+            <p className="text-xs sm:text-base lg:text-xl text-orange-500 max-w-3xl mx-auto leading-relaxed font-medium break-words">
               Our Training Programs can be integrated during but not limited
               to...
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-8 max-w-6xl mx-auto">
-            <div className="text-center">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <Building2 className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Onboarding
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <Users className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Team Building
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <Target className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Performance Review
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <Award className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Annual Conference
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <TrendingUp className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Sales Kickoff
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto mt-12">
-            <div className="text-center">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto mt-12">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <GraduationCap className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Leadership Training
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <Lightbulb className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Innovation Workshop
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <Shield className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Compliance Training
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 mx-auto bg-yellow-400 rounded-full flex items-center justify-center mb-4">
                 <Calendar className="h-10 w-10 text-gray-800" />
               </div>
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium break-words">
                 Quarterly Reviews
               </div>
             </div>
@@ -304,7 +304,7 @@ export default function HomePage() {
               Client Success Stories
             </Badge>
             <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
-              Trusted by{" "}
+              Trusted by
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Industry Leaders
               </span>
