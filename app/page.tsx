@@ -44,6 +44,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       <section className="py-10 bg-gradient-to-r from-blue-600 to-cyan-500">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
@@ -298,39 +299,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* <section className="py-10">
-        <div className="flex items-center justify-center flex-col space-y-6 mb-16 animate-elegant-fade-up">
-          <Badge
-            variant="outline"
-            className="px-6 py-2 mb-2 text-sm font-medium rounded-full"
-          >
-            Client Success Stories
-          </Badge>
-          <h2 className="text-xl mb-10 sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
-            Trusted by-
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Industry Leaders
-            </span>
-          </h2>
-        </div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-            <div className="space-y-4">
-              <video width="360" height="360" controls poster="/coveprage.png">
-                <source src="/Stress Management.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div className="space-y-4">
-              <video width="360" height="360" controls poster="/coveprage.png">
-                <source src="/Stress Management.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <section className="py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-20 animate-elegant-fade-up">
@@ -372,17 +340,8 @@ export default function HomePage() {
               </div>
               <div className="text-center space-y-2">
                 <p className="text-gray-600 leading-relaxed">
-                  "Partnering with Log Vikas transformed how our teams interact
-                  with customers. The outcomes were visible within weeks."
+                  "Stress Management"
                 </p>
-                <div>
-                  <span className="font-semibold text-gray-900">
-                    Shubham Mehta
-                  </span>
-                  <div className="text-sm text-gray-500">
-                    COO, Retail Essentials
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -404,52 +363,12 @@ export default function HomePage() {
                 </video>
               </div>
               <div className="text-center space-y-2">
-                <p className="text-gray-600 leading-relaxed">
-                  "The customized leadership program empowered our managers to
-                  drive performance with empathy and clarity."
-                </p>
-                <div>
-                  <span className="font-semibold text-gray-900">
-                    Aditi Sharma
-                  </span>
-                  <div className="text-sm text-gray-500">
-                    HR Director, VisionTech
-                  </div>
-                </div>
+                <p className="text-gray-600 leading-relaxed">"Team Building"</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* <section className="py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-20 animate-elegant-fade-up">
-            <Badge
-              variant="outline"
-              className="px-6 py-2 text-sm font-medium rounded-full"
-            >
-              Client Success Stories
-            </Badge>
-            <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
-              Trusted by-
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Industry Leaders
-              </span>
-            </h2>
-            <div className="grid grid-cols-2">
-              <video width="360" height="360" controls poster="/coveprage.png">
-                <source src="/Stress Management.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <video width="360" height="360" controls poster="/coveprage.png">
-                <source src="/Another Video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="py-24 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
