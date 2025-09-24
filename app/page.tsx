@@ -13,8 +13,6 @@ import {
   Award,
   Target,
   TrendingUp,
-  Globe,
-  Trophy,
   Lightbulb,
   Shield,
 } from "lucide-react";
@@ -27,10 +25,9 @@ export default function HomePage() {
       <section className="relative py-5 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/20180211_133826.jpg"
+            src="/During the Session..jpg"
             alt="Team Building Results In Action"
             className="w-full sm:h-[1000px] lg:h-[600px] object-cover object-center"
-
           />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -39,7 +36,7 @@ export default function HomePage() {
               <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold leading-tight text-white break-words">
                 Training Results In Action
               </h1>
-              <p className="text-base sm:text-lg lg:text-2xl text-white leading-relaxed max-w-3xl mx-auto font-medium break-words">
+              <p className="text-base sm:text-lg lg:text-3xl text-white leading-relaxed max-w-3xl mx-auto font-medium break-words">
                 Achieve and maintain the maximum engagement and learning impact
                 you've always wanted for your team with Log Vikas behind you.
               </p>
@@ -47,7 +44,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <section className="py-10 bg-gradient-to-r from-blue-600 to-cyan-500">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
@@ -63,7 +59,9 @@ export default function HomePage() {
                 <Award className="h-10 w-10 text-white" />
               </div>
               <div className="text-4xl font-bold">2,000+</div>
-              <div className="text-lg font-medium">Training Man Days Delivered</div>
+              <div className="text-lg font-medium">
+                Training Man Days Delivered
+              </div>
             </div>
             <div className="space-y-4">
               <div className="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-4">
@@ -300,6 +298,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* <section className="py-10">
+        <div className="flex items-center justify-center flex-col space-y-6 mb-16 animate-elegant-fade-up">
+          <Badge
+            variant="outline"
+            className="px-6 py-2 mb-2 text-sm font-medium rounded-full"
+          >
+            Client Success Stories
+          </Badge>
+          <h2 className="text-xl mb-10 sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
+            Trusted by-
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Industry Leaders
+            </span>
+          </h2>
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            <div className="space-y-4">
+              <video width="360" height="360" controls poster="/coveprage.png">
+                <source src="/Stress Management.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="space-y-4">
+              <video width="360" height="360" controls poster="/coveprage.png">
+                <source src="/Stress Management.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
       <section className="py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-20 animate-elegant-fade-up">
@@ -309,34 +340,116 @@ export default function HomePage() {
             >
               Client Success Stories
             </Badge>
-              <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
-                Trusted by- 
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+              Trusted by{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Industry Leaders
-                </span>
-              </h2>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                <video width="640" height="360" controls poster="/coveprage.png">
+              </span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Our proven track record speaks through the success of our clients
+              across diverse industries.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-elegant-fade-up delay-600">
+              <div className="overflow-hidden rounded-xl mb-6">
+                <video
+                  className="h-full w-full object-cover"
+                  controls
+                  preload="metadata"
+                  poster="/coverpage.jpg"
+                >
+                  <track
+                    kind="captions"
+                    src="/captions/client-feedback-1.vtt"
+                    label="English captions"
+                  />
                   <source src="/Stress Management.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                <p style={{ marginTop: '1rem', fontStyle: 'italic' }}>
-                  Watch our client's feedback video above - (Stress Management).
-                </p>
               </div>
+              <div className="text-center space-y-2">
+                <p className="text-gray-600 leading-relaxed">
+                  "Partnering with Log Vikas transformed how our teams interact
+                  with customers. The outcomes were visible within weeks."
+                </p>
+                <div>
+                  <span className="font-semibold text-gray-900">
+                    Shubham Mehta
+                  </span>
+                  <div className="text-sm text-gray-500">
+                    COO, Retail Essentials
+                  </div>
+                </div>
+              </div>
+            </div>
 
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                <video width="640" height="360" controls poster="/coverpage.png">
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-elegant-fade-up delay-750">
+              <div className="overflow-hidden rounded-xl mb-6">
+                <video
+                  className="h-full w-full object-cover"
+                  controls
+                  preload="metadata"
+                  poster="/coverpage1.jpg"
+                >
+                  <track
+                    kind="captions"
+                    src="/captions/client-feedback-2.vtt"
+                    label="English captions"
+                  />
                   <source src="/Team building.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                <p style={{ marginTop: '1rem', fontStyle: 'italic' }}>
-                  Watch our client's feedback video above  - (Team Building).
-                </p>
               </div>
+              <div className="text-center space-y-2">
+                <p className="text-gray-600 leading-relaxed">
+                  "The customized leadership program empowered our managers to
+                  drive performance with empathy and clarity."
+                </p>
+                <div>
+                  <span className="font-semibold text-gray-900">
+                    Aditi Sharma
+                  </span>
+                  <div className="text-sm text-gray-500">
+                    HR Director, VisionTech
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* <section className="py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-20 animate-elegant-fade-up">
+            <Badge
+              variant="outline"
+              className="px-6 py-2 text-sm font-medium rounded-full"
+            >
+              Client Success Stories
+            </Badge>
+            <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
+              Trusted by-
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Industry Leaders
+              </span>
+            </h2>
+            <div className="grid grid-cols-2">
+              <video width="360" height="360" controls poster="/coveprage.png">
+                <source src="/Stress Management.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <video width="360" height="360" controls poster="/coveprage.png">
+                <source src="/Another Video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       <section className="py-24 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
