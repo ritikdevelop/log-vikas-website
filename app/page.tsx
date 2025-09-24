@@ -30,7 +30,7 @@ export default function HomePage() {
             src="/20180211_133826.jpg"
             alt="Team Building Results In Action"
             className="w-full sm:h-[1000px] lg:h-[600px] object-cover object-center"
-            // Responsive image
+
           />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -39,7 +39,7 @@ export default function HomePage() {
               <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold leading-tight text-white break-words">
                 Training Results In Action
               </h1>
-              <p className="text-base sm:text-lg lg:text-2xl text-orange-400 leading-relaxed max-w-3xl mx-auto font-medium break-words">
+              <p className="text-base sm:text-lg lg:text-2xl text-white leading-relaxed max-w-3xl mx-auto font-medium break-words">
                 Achieve and maintain the maximum engagement and learning impact
                 you've always wanted for your team with Log Vikas behind you.
               </p>
@@ -63,7 +63,7 @@ export default function HomePage() {
                 <Award className="h-10 w-10 text-white" />
               </div>
               <div className="text-4xl font-bold">2,000+</div>
-              <div className="text-lg font-medium">Training Days Delivered</div>
+              <div className="text-lg font-medium">Training Man Days Delivered</div>
             </div>
             <div className="space-y-4">
               <div className="w-20 h-20 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-4">
@@ -89,7 +89,13 @@ export default function HomePage() {
             <h2 className="text-lg sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
               Corporate Training Programs
             </h2>
-            <p className="text-xs sm:text-base lg:text-xl text-orange-500 max-w-3xl mx-auto leading-relaxed font-medium break-words">
+            {/* Tagline for mobile devices in cursive */}
+            <div className="block sm:hidden mt-2">
+              <span className="italic text-blue-600 text-lg font-[cursive]">
+                Developing people to better tomorrow
+              </span>
+            </div>
+            <p className="text-xs sm:text-base lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium break-words">
               Our Training Programs can be integrated during but not limited
               to...
             </p>
@@ -179,7 +185,7 @@ export default function HomePage() {
             <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
               How It Works?
             </h2>
-            <p className="text-sm sm:text-base lg:text-xl text-orange-500 max-w-3xl mx-auto leading-relaxed font-medium break-words">
+            <p className="text-sm sm:text-base lg:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed font-medium break-words">
               Our approach towards your Training Success
             </p>
           </div>
@@ -303,80 +309,31 @@ export default function HomePage() {
             >
               Client Success Stories
             </Badge>
-            <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
-              Trusted by
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <h2 className="text-xl sm:text-3xl lg:text-5xl font-bold text-gray-900 break-words">
+                Trusted by- 
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Industry Leaders
-              </span>
-            </h2>
-            <p className="text-sm sm:text-base lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed break-words">
-              Our proven track record speaks through the success of our clients
-              across diverse industries.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-elegant-fade-up delay-150">
-              <div className="flex justify-center space-x-1 mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
-                  />
-                ))}
+                </span>
+              </h2>
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                <video width="640" height="360" controls poster="/coveprage.png">
+                  <source src="/Stress Management.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <p style={{ marginTop: '1rem', fontStyle: 'italic' }}>
+                  Watch our client's feedback video above - (Stress Management).
+                </p>
               </div>
-              <blockquote className="text-gray-600 italic text-center mb-6 leading-relaxed">
-                "Log Vikas has designed excellent SOPs for our store operations.
-                Their training approach is practical and results-oriented."
-              </blockquote>
-              <div className="text-center">
-                <div className="font-semibold text-gray-900">
-                  Archies Limited
-                </div>
-                <div className="text-sm text-gray-500">
-                  Retail Chain Partner
-                </div>
-              </div>
-            </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-elegant-fade-up delay-300">
-              <div className="flex justify-center space-x-1 mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
-                  />
-                ))}
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                <video width="640" height="360" controls poster="/coverpage.png">
+                  <source src="/Team building.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <p style={{ marginTop: '1rem', fontStyle: 'italic' }}>
+                  Watch our client's feedback video above  - (Team Building).
+                </p>
               </div>
-              <blockquote className="text-gray-600 italic text-center mb-6 leading-relaxed">
-                "Their communication program for our sales force showed
-                immediate results. Highly professional team."
-              </blockquote>
-              <div className="text-center">
-                <div className="font-semibold text-gray-900">HORIBA India</div>
-                <div className="text-sm text-gray-500">
-                  Technology Solutions
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-elegant-fade-up delay-450">
-              <div className="flex justify-center space-x-1 mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
-                  />
-                ))}
-              </div>
-              <blockquote className="text-gray-600 italic text-center mb-6 leading-relaxed">
-                "Excellent mystery shopping services with real-time geo-tagged
-                reports. Attention to detail is remarkable."
-              </blockquote>
-              <div className="text-center">
-                <div className="font-semibold text-gray-900">W. H. Smith</div>
-                <div className="text-sm text-gray-500">Retail Excellence</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

@@ -20,45 +20,56 @@ import {
   Recycle,
   Battery,
   TreePine,
-  Menu,
-  X,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 
 export default function GreenEnergyPage() {
   return (
     <div className="min-h-screen bg-white">
       <div className="bg-green-600 text-white py-2 px-4 text-sm">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-around items-center">
           <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>+91 98500 55791</span>
+              <span className="text-nowrap">
+                +91-9560090847 | 91-7303761417
+              </span>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1">
               <Mail className="h-4 w-4" />
-              <span>green@logvikas.com</span>
+              <span className="text-nowrap">
+                contact@logvikas.in | logvikas.india@gmail.com
+              </span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="h-4 w-4" />
-              <span>xyz</span>
+              <span className="text-nowrap">
+                Vaishali Sector-3 Ghaziabad
+                <br />
+                Uttar-Pradesh-201010
+              </span>
             </div>
           </div>
 
           <div className="flex space-x-4">
-            <Link href="#" className="hover:text-green-200 transition-colors">
+            <Link
+              href="https://www.facebook.com/share/1Wdvm87d43/"
+              className="hover:text-green-200 transition-colors"
+            >
               Facebook
             </Link>
-            <Link href="#" className="hover:text-green-200 transition-colors">
-              Instagram
+            <Link
+              href="https://youtube.com/@logvikas4449?si=OaCTMt07XAY23140"
+              className="hover:text-green-200 transition-colors"
+            >
+              Youtube
             </Link>
-            <Link href="#" className="hover:text-green-200 transition-colors">
-              LinkedIn
-            </Link>
-            <Link href="#" className="hover:text-green-200 transition-colors">
+            <Link
+              href="https://x.com/logvikas_India"
+              className="hover:text-green-200 transition-colors"
+            >
               Twitter
             </Link>
           </div>
@@ -425,28 +436,28 @@ export default function GreenEnergyPage() {
               {
                 name: "Rajesh Kumar",
                 role: "Solar Project Manager",
-                image: "/placeholder.svg?height=100&width=100",
+                // image: "/placeholder.svg?height=100&width=100",
                 testimonial:
                   "Log Vikas Green Energy transformed my career. The comprehensive training program gave me the skills and confidence to lead major solar projects.",
               },
               {
                 name: "Priya Sharma",
                 role: "Wind Energy Consultant",
-                image: "/placeholder.svg?height=100&width=100",
+                // image: "/placeholder.svg?height=100&width=100",
                 testimonial:
                   "The practical approach and industry connections provided by Log Vikas helped me secure my dream job in renewable energy consulting.",
               },
               {
                 name: "Mohammed Ali",
                 role: "Energy Auditor",
-                image: "/placeholder.svg?height=100&width=100",
+                // image: "/placeholder.svg?height=100&width=100",
                 testimonial:
                   "Excellent training methodology and expert instructors. The program covered every aspect of energy auditing and sustainability practices.",
               },
               {
                 name: "Sneha Patel",
                 role: "Green Building Specialist",
-                image: "/placeholder.svg?height=100&width=100",
+                // image: "/placeholder.svg?height=100&width=100",
                 testimonial:
                   "The green building certification training was comprehensive and practical. Now I'm successfully managing LEED projects across multiple cities.",
               },
@@ -455,15 +466,15 @@ export default function GreenEnergyPage() {
                 key={index}
                 className="p-6 text-center hover:shadow-xl transition-all duration-300 border-0 shadow-lg"
               >
-                <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                  <Image
+                {/* <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden"> */}
+                  {/* <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
                     width={80}
                     height={80}
                     className="w-full h-full object-cover"
-                  />
-                </div>
+                  /> */}
+                {/* </div> */}
                 <p className="text-gray-600 mb-4 italic leading-relaxed">
                   "{testimonial.testimonial}"
                 </p>
@@ -514,28 +525,22 @@ export default function GreenEnergyPage() {
               </p>
               <div className="flex space-x-4">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/share/1Wdvm87d43/"
                   className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   Facebook
                 </Link>
                 <Link
-                  href="#"
-                  className="text-gray-400 hover:text-green-400 transition-colors"
-                >
-                  Instagram
-                </Link>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-green-400 transition-colors"
-                >
-                  LinkedIn
-                </Link>
-                <Link
-                  href="#"
+                  href="https://x.com/logvikas_India"
                   className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   Twitter
+                </Link>
+                <Link
+                  href="https://www.youtube.com/@logvikas4449"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
+                >
+                  Youtube
                 </Link>
               </div>
             </div>
@@ -553,7 +558,7 @@ export default function GreenEnergyPage() {
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href="/green-energy/about"
                     className="text-gray-400 hover:text-green-400 transition-colors"
                   >
                     About us
@@ -561,7 +566,7 @@ export default function GreenEnergyPage() {
                 </li>
                 <li>
                   <Link
-                    href="/services"
+                    href="/green-energy/services"
                     className="text-gray-400 hover:text-green-400 transition-colors"
                   >
                     Services
@@ -569,7 +574,7 @@ export default function GreenEnergyPage() {
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href="/green-energy/contact"
                     className="text-gray-400 hover:text-green-400 transition-colors"
                   >
                     Contact us
@@ -583,30 +588,26 @@ export default function GreenEnergyPage() {
               <ul className="space-y-3">
                 <li className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-green-400" />
-                  <span className="text-gray-400">+91 9850055791</span>
+                  <span className="text-gray-400">
+                    +91-9560090847 <br />
+                    +91-7303761417
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-green-400" />
-                  <span className="text-gray-400">green@logvikas.com</span>
+                  <span className="text-gray-400">
+                    contact@logvikas.in <br /> logvikas.india@gmail.com
+                  </span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <MapPin className="h-4 w-4 text-green-400 mt-1" />
-                  <span className="text-gray-400">
-                    Mumbai, Maharashtra, India - 400001
+                  <span className="text-muted-foreground text-sm">
+                    Vaishali Sector-3 Ghaziabad
+                    <br />
+                    Uttar-Pradesh-201010
                   </span>
                 </li>
               </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lg mb-6">Working Hours</h4>
-              <div className="text-gray-400">
-                <div className="mb-2">Mon - Sat</div>
-                <div className="text-green-400 font-semibold">10am - 6pm</div>
-              </div>
-              <Button className="mt-6 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-none uppercase tracking-wider">
-                Register Your Interest
-              </Button>
             </div>
           </div>
 

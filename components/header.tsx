@@ -16,7 +16,7 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-2 group min-w-[48px]">
             <div className="relative">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/images%281%29-cPK4BN1Gw1qhEAFA1UCW0vJBKh1pH7.jpeg"
+                src="/logo.jpg"
                 alt="Log Vikas Logo"
                 className="h-10 w-auto max-w-[120px] transition-transform duration-300 group-hover:scale-105"
               />
@@ -78,10 +78,11 @@ export function Header() {
             >
               <Link
                 href="/green-energy"
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 py-4"
               >
                 <Leaf className="h-4 w-4" />
-                <span>Green Switch</span>
+                <span className="leading-tight">LV Green Energy
+                  <br /> Consulting Services</span>
               </Link>
             </Button>
 
@@ -127,7 +128,7 @@ export function Header() {
             <div className="flex justify-between bg-white items-center h-20 px-4 border-b border-border/40">
               <Link href="/" className="flex items-center space-x-2 group min-w-[48px]" onClick={() => setIsMenuOpen(false)}>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/design-mode-images/images%281%29-cPK4BN1Gw1qhEAFA1UCW0vJBKh1pH7.jpeg"
+                  src="/logo.jpg"
                   alt="Log Vikas Logo"
                   className="h-10 w-auto max-w-[120px]"
                 />
@@ -173,7 +174,8 @@ export function Header() {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Leaf className="h-4 w-4" />
-                    <span>Green Switch</span>
+                    <span className="leading-tight">LV Green Energy
+                  <br /> Consulting Services</span>
                   </Link>
                 </Button>
                 <Button

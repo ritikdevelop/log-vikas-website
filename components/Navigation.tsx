@@ -11,10 +11,14 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/green-energy" className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
               <Leaf className="h-6 w-6 text-green-600" />
             </div>
+            <span className="font-semibold text-gray-800 leading-tight">
+              LV Green Energy
+              <br /> Consulting Services
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -37,9 +41,6 @@ export function Navigation() {
             >
               Contact us
             </Link>
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-none font-medium">
-              Register Your Project
-            </Button>
           </nav>
 
           {/* Mobile menu button */}
@@ -77,9 +78,6 @@ export function Navigation() {
               >
                 Contact us
               </Link>
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-none font-medium w-fit">
-                Register Your Project
-              </Button>
             </nav>
           </div>
         )}

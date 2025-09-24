@@ -103,32 +103,47 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-white">
       {/* Top Contact Bar */}
       <div className="bg-green-600 text-white py-2 px-4 text-sm">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-around items-center">
           <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>+91 98500 55791</span>
+              <span className="text-nowrap">
+                +91-9560090847 | 91-7303761417
+              </span>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1">
               <Mail className="h-4 w-4" />
-              <span>green@logvikas.com</span>
+              <span className="text-nowrap">
+                contact@logvikas.in | logvikas.india@gmail.com
+              </span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="h-4 w-4" />
-              <span>Andheri, Mumbai - 12</span>
+              <span className="text-nowrap">
+                Vaishali Sector-3 Ghaziabad
+                <br />
+                Uttar-Pradesh-201010
+              </span>
             </div>
           </div>
+
           <div className="flex space-x-4">
-            <Link href="#" className="hover:text-green-200 transition-colors">
+            <Link
+              href="https://www.facebook.com/share/1Wdvm87d43/"
+              className="hover:text-green-200 transition-colors"
+            >
               Facebook
             </Link>
-            <Link href="#" className="hover:text-green-200 transition-colors">
-              Instagram
+            <Link
+              href="https://youtube.com/@logvikas4449?si=OaCTMt07XAY23140"
+              className="hover:text-green-200 transition-colors"
+            >
+              Youtube
             </Link>
-            <Link href="#" className="hover:text-green-200 transition-colors">
-              LinkedIn
-            </Link>
-            <Link href="#" className="hover:text-green-200 transition-colors">
+            <Link
+              href="https://x.com/logvikas_India"
+              className="hover:text-green-200 transition-colors"
+            >
               Twitter
             </Link>
           </div>
@@ -138,7 +153,7 @@ export default function ServicesPage() {
       {/* Header */}
       <Navigation />
       {/* Back to home */}
-      <div className="absolute top-32 left-2 z-20">
+      <div className="absolute top-38 left-2 z-20">
         <Link
           href="/"
           className="flex items-center space-x-2 text-white/80 hover:text-white transition-colors duration-200 group bg-black/20 backdrop-blur-sm rounded-lg px-4 py-2"
@@ -447,99 +462,102 @@ export default function ServicesPage() {
                 </div>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                Leading the way in environmental training and sustainable
-                solutions for a better tomorrow.
+                Log Vikas Green Energy – a visionary force in the realm of
+                Environmental Training, Green Energy Education, and
+                Sustainability Consultations.
               </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-lg mb-6">Services</h4>
-              <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-green-400 transition-colors"
-                  >
-                    Solar Energy Training
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-green-400 transition-colors"
-                  >
-                    Green Building Certification
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-green-400 transition-colors"
-                  >
-                    Energy Storage Systems
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-green-400 transition-colors"
-                  >
-                    Environmental Assessment
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-lg mb-6">Contact Info</h4>
-              <ul className="space-y-3">
-                <li className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-green-400" />
-                  <span className="text-gray-400">+91 9850055791</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <Mail className="h-4 w-4 text-green-400" />
-                  <span className="text-gray-400">green@logvikas.com</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <MapPin className="h-4 w-4 text-green-400 mt-1" />
-                  <span className="text-gray-400">
-                    Mumbai, Maharashtra, India
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-lg mb-6">Follow Us</h4>
               <div className="flex space-x-4">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/share/1Wdvm87d43/"
                   className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   Facebook
                 </Link>
                 <Link
-                  href="#"
-                  className="text-gray-400 hover:text-green-400 transition-colors"
-                >
-                  Instagram
-                </Link>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-green-400 transition-colors"
-                >
-                  LinkedIn
-                </Link>
-                <Link
-                  href="#"
+                  href="https://x.com/logvikas_India"
                   className="text-gray-400 hover:text-green-400 transition-colors"
                 >
                   Twitter
                 </Link>
+                <Link
+                  href="https://www.youtube.com/@logvikas4449"
+                  className="text-gray-400 hover:text-green-400 transition-colors"
+                >
+                  Youtube
+                </Link>
               </div>
             </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-6">Explore</h4>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/"
+                    className="text-gray-400 hover:text-green-400 transition-colors"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/green-energy/about"
+                    className="text-gray-400 hover:text-green-400 transition-colors"
+                  >
+                    About us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/green-energy/services"
+                    className="text-gray-400 hover:text-green-400 transition-colors"
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/green-energy/contact"
+                    className="text-gray-400 hover:text-green-400 transition-colors"
+                  >
+                    Contact us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-6">Get in touch</h4>
+              <ul className="space-y-3">
+                <li className="flex items-center space-x-2">
+                  <Phone className="h-4 w-4 text-green-400" />
+                  <span className="text-gray-400">
+                    +91-9560090847 <br />
+                    +91-7303761417
+                  </span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <Mail className="h-4 w-4 text-green-400" />
+                  <span className="text-gray-400">
+                    contact@logvikas.in <br /> logvikas.india@gmail.com
+                  </span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <MapPin className="h-4 w-4 text-green-400 mt-1" />
+                  <span className="text-muted-foreground text-sm">
+                    Vaishali Sector-3 Ghaziabad
+                    <br />
+                    Uttar-Pradesh-201010
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
+
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              © 2024 Log Vikas Green Energy. All Rights Reserved.
+              © 2024 Log Vikas Green Energy. All Rights Reserved. Designed &
+              Developed by Log Vikas Team
             </p>
           </div>
         </div>

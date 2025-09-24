@@ -7,7 +7,6 @@ export function Footer() {
     <footer className="bg-muted/50 border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {/* Company Info */}
           <div className="space-y-4">
             <img
@@ -38,12 +37,6 @@ export function Footer() {
                 Our Services
               </Link>
               <Link
-                href="/lms"
-                className="text-muted-foreground hover:text-primary transition-colors text-sm"
-              >
-                Learning Management
-              </Link>
-              <Link
                 href="/contact"
                 className="text-muted-foreground hover:text-primary transition-colors text-sm"
               >
@@ -51,14 +44,17 @@ export function Footer() {
               </Link>
               <Button
                 asChild
-                className="bg-green-500 hover:bg-green-600 text-white font-semibold px-3 py-2 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 animate-refined-glow"
+                className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 animate-refined-glow !w-[100%]"
               >
                 <Link
                   href="/green-energy"
-                  className="flex items-center space-x-2"
+                  className="flex items-center justify-start space-x-2"
                 >
                   <Leaf className="h-4 w-4" />
-                  <span>Green Switch</span>
+                  <span className="leading-tight">
+                    LV Green Energy
+                    <br /> Consulting Services
+                  </span>
                 </Link>
               </Button>
             </nav>
@@ -76,9 +72,6 @@ export function Footer() {
               </span>
               <span className="text-muted-foreground text-sm">
                 Event Management
-              </span>
-              <span className="text-muted-foreground text-sm">
-                Placement Services
               </span>
             </nav>
           </div>
