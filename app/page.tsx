@@ -25,7 +25,7 @@ export default function HomePage() {
       <section className="relative py-5 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/During the Session..jpg"
+            src="/session.JPG"
             alt="Team Building Results In Action"
             className="w-full sm:h-[1000px] lg:h-[600px] object-cover object-center"
           />
